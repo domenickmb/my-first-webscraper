@@ -69,7 +69,7 @@ def crawl_data(url):
         if next_page:
             next_page = next_page['href']
             # next_page is an internal link so we concatenate
-            # to get the domain to get the complete url
+            # it to the domain to get the complete url
             url = domain + next_page
         else:
             url = None
